@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=DM+Sans:400,500,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="cssload-container">
+        <svg class="filter" version="1.1">
+          <defs>
+            <filter id="gooeyness">
+              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness"></fecolormatrix>
+              <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
+            </filter>
+          </defs>
+        </svg>
+        <div class="dots">
+          <div class="dot mainDot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="80px" data-xl-stick-up-offset="80px" data-xxl-stick-up-offset="80px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo.svg" alt="" width="153" height="44"/></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                      </li>
+                      <!--Hide Navigation Menu
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a> -->
+                        <!-- RD Navbar Megamenu-->
+                        <!--Hide Navigation Menu
+                        <ul class="rd-menu rd-navbar-megamenu">
+                          <li class="rd-megamenu-item">
+                            <h6 class="rd-megamenu-title">Services</h6>
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="services.html">Services</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="single-service.html">Single service</a></li>
+                            </ul>
+                          </li>
+                          <li class="rd-megamenu-item">
+                            <h6 class="rd-megamenu-title">Additional Pages</h6>
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404-page.html">404 page</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">Coming soon</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="counters.html">Counters</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">Search results</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy policy</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="contacts.html">Contacts</a></li>
+                            </ul>
+                          </li>
+                          <li class="rd-megamenu-item">
+                            <h6 class="rd-megamenu-title">Elements</h6>
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">Typography</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">Buttons</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">Forms</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs-and-accordions.html">Tabs and accordions</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">Progress bars</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">Grid system</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tables.html">Tables</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    -->
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About us</a>
+                      </li>
+                       <li class="rd-nav-item"><a class="rd-megamenu-list-link" href="contacts.html">Contact Us</a></li>
+                      <!--Hide Navigation Menu
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="shop.html">Shop</a> -->
+                        <!-- RD Navbar Dropdown-->
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-product.html">Single product</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart page</a></li>
+                        </ul>
+                      </li>
+                      <!--Hide Navigation Menu
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="projects.html">Projects</a> -->
+                        <!-- RD Navbar Dropdown-->
+                        <!--Hide Navigation Menu
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="project-page.html">Project page</a></li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="grid-blog.html">News</a>
+                      -->
+                        <!-- RD Navbar Dropdown-->
+                        <!--Hide Navigation Menu
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog post</a></li>
+                        </ul>
+                      -->
+
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="rd-navbar-collapse">
+                  <ul class="rd-navbar-contacts-4">
+                    <li><span class="icon icomoon icomoon-mail"></span><span class="link-wrap"><a class="mail" href="mailto:#">info@simplisafeindia.com</a></span></li>
+                    <li><span class="icon icomoon icomoon-phone"></span><span class="link-wrap"><a class="phone" href="tel:#">+91 9108010829</a></span></li>
+                    <li><span class="icon icomoon icomoon-location"></span><span class="link-wrap"><a class="address" href="#">138 4th AC Cross,Kasturi Nagar,Bangalore</a></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Page Header and Swiper-->
+      <section class="section swiper-custom-container-3">
+        <div class="swiper-container swiper-slider swiper-slider-7" data-swiper='{"autoplay":false,"simulateTouch":false,"loop":true,"navigation":{"nextEl":".swiper-button-next","prevEl":".swiper-button-prev"}}'>
+          <div class="swiper-wrapper text-sm-left">
+            <div class="swiper-slide" data-slide-bg="images/home-banner.jpg">
+              <div class="swiper-slide-caption section-md">
+                <div class="swiper-box">
+                  <h2 class="heading-1 swiper-title oh"><span class="d-block" data-caption-animate="slideInLeft" data-caption-delay="200">Make Your Home a Safe Place with Our Security Solutions</span></h2>
+                  <p class="sub" data-caption-animate="slideInUp" data-caption-delay="200">SimpliSafe  provides top-notch security systems for homes and offices all over the India.</p><a class="button button-white" data-caption-animate="fadeInUp" data-caption-delay="500" href="contacts.html">Get a Quote<span class="icon mdi mdi-chevron-right"></span></a>
+                </div>
+                <div class="swiper-content-bg-1"></div>
+              </div>
+            </div>
+            <!--second carousel hidden
+            <div class="swiper-slide" data-slide-bg="images/slide-2-1920x700.jpg">
+              <div class="swiper-slide-caption section-md">
+                <div class="swiper-box">
+                  <h2 class="heading-1 swiper-title oh"><span class="d-block" data-caption-animate="slideInLeft" data-caption-delay="200">Find Safety in Your Home with a Home Security System</span></h2>
+                  <p class="sub" data-caption-animate="slideInUp" data-caption-delay="200">SimpliSafe provides top-notch security systems for homes and offices all over the India.</p><a class="button button-white" data-caption-animate="fadeInUp" data-caption-delay="500" href="project-page.html">Get a Quote<span class="icon mdi mdi-chevron-right"></span></a>
+                </div>
+                <div class="swiper-content-bg-1"></div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="images/slide-3-1920x700.jpg">
+              <div class="swiper-slide-caption section-md">
+                <div class="swiper-box">
+                  <h2 class="heading-1 swiper-title oh"><span class="d-block" data-caption-animate="slideInLeft" data-caption-delay="200">Dester Monitoring Plans and Packages</span></h2>
+                  <p class="sub" data-caption-animate="slideInUp" data-caption-delay="200">SimpliSafe provides top-notch security systems for homes and offices all over the India.</p><a class="button button-white" data-caption-animate="fadeInUp" data-caption-delay="500" href="project-page.html">Get a Quote<span class="icon mdi mdi-chevron-right"></span></a>
+                </div>
+                <div class="swiper-content-bg-1"></div>
+              </div>
+            </div>
+          </div> -->
+          <!-- Swiper Navigation-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- Swiper Pagination-->
+          <div class="swiper-pagination" data-bullet-custom="true"></div>
+        </div>
+
+      </section>
+
+      <!-- Our Service-->
+      <section class="section section-inset-6 bg-default">
+        <div class="container">
+          <h2 class="wow fadeInLeft">Our Services</h2>
+          <p class="sub">We provide a wide range of services for our clients.</p>
+          <div class="row row-xs no-md-gutters justify-content-center">
+            <div class="col-sm-6 col-lg-4">
+              <div class="services-modern">
+                <article class="box-icon-modern wow fadeInDown"><span class="box-icon-modern-icon icomoon-cameras icomoon"></span>
+                  <h3 class="heading-4 box-icon-modern-title"><a href="">Home Security Cameras</a></h3>
+                  <p class="box-icon-modern-text">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded.</p><!--<a class="box-icon-modern-link" href="single-service.html">Read More<span class="icon mdi mdi-arrow-right"></span></a>-->
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="services-modern">
+                <article class="box-icon-modern wow fadeInDown" data-wow-delay=".1s"><span class="box-icon-modern-icon icomoon-home icomoon"></span>
+                  <h3 class="heading-4 box-icon-modern-title"><a href="">Home Automation</a></h3>
+                  <p class="box-icon-modern-text">In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure. The wise man therefore always holds in these matters.</p><!--<a class="box-icon-modern-link" href="single-service.html">Read More<span class="icon mdi mdi-arrow-right"></span></a>-->
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="services-modern">
+                <article class="box-icon-modern wow fadeInDown" data-wow-delay=".2s"><span class="box-icon-modern-icon icomoon-group icomoon"></span>
+                  <h3 class="heading-4 box-icon-modern-title"><a href="">Fire and Life Safety</a></h3>
+                  <p class="box-icon-modern-text">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.</p><!--<a class="box-icon-modern-link" href="single-service.html">Read More<span class="icon mdi mdi-arrow-right"></span></a>-->
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-image-4">
+        <div class="container-fluid container-inset-0">
+          <div class="row no-gutters">
+            <div class="col-md-4 col-lg-5 col-xl-6 box-transform-wrap box-transform-1">
+              <div class="box-transform" style="background-image: url(images/bg-index-12.jpg);"></div>
+            </div>
+            <div class="col-md-8 col-lg-7 col-xl-6 bg-image-3">
+              <div class="tabs-custom tabs-custom-3" id="tabs-12">
+                <div class="tab-content tab-content-4 section-inset-7">
+                  <div class="tab-pane fade show active" id="tabs-12-1">
+                    <h2 class="oh-desktop"><span class="d-inline-block wow slideInLeft">A Few Words About Our Security Company</span></h2>
+                    <p class="sub wow fadeInRight">For over 10 years, we have made the security of our customers our top priority. Today, we serve over 5,000 happy customers across India.</p>
+                    <div class="button-wrap oh-desktop"><a class="button button-primary wow slideInUp" href="about-us.html">Learn More<span class="icon mdi mdi-chevron-right"></span></a></div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-12-2">
+                    <h2>Mission &amp; Vision of SimpliSafe Team</h2>
+                    <p class="sub">o set a benchmark in Home Automation and Electronic Security Industry and
+satisfy the customers</p>
+                    <div class="button-wrap oh-desktop"><a class="button button-primary wow slideInUp" href="about-us.html">Learn More<span class="icon mdi mdi-chevron-right"></span></a></div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-12-3">
+                    <h2>Our Values at SimpliSafe</h2>
+                    <p class="sub">Respect. Professionalism. Perseverance. Integrity. Right Attitude:These are the
+5 core values that guide us in our daily work and in the way we do business.</p>
+                    <div class="button-wrap oh-desktop"><a class="button button-primary wow slideInUp" href="about-us.html">Learn More<span class="icon mdi mdi-chevron-right"></span></a></div>
+                  </div>
+                </div>
+                <ul class="nav nav-tabs-3">
+                  <li class="nav-item-3" role="presentation"><a class="nav-link-3 active" href="#tabs-12-1" data-toggle="tab"><span>About Us</span></a></li>
+                  <li class="nav-item-3" role="presentation"><a class="nav-link-3" href="#tabs-12-2" data-toggle="tab"><span>Mission & Vision</span></a></li>
+                  <li class="nav-item-3" role="presentation"><a class="nav-link-3" href="#tabs-12-3" data-toggle="tab"><span>Our Values</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest projects-->
+      <section class="section section-xxl bg-default text-center">
+        <div class="container">
+          <div class="group-xl group-sm-justify">
+            <h2 class="oh-desktop"><span class="d-inline-block wow slideInLeft">Why Choose Us</span></h2>
+            <div class="dots-custom"></div>
+          </div>
+          <div class="owl-carousel owl-style-3" data-items="1" data-sm-items="2" data-lg-items="3" data-margin="30" data-autoplay="false" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut" data-pagination-class=".dots-custom">
+            <!-- Services Creative-->
+            <article class="services-creative"><span class="services-creative-icon icomoon icomoon-headphones"></span><a class="services-creative-figure" href=""><img src="images/services-19-360x240.jpg" alt="" width="360" height="240"/></a>
+              <div class="services-creative-caption">
+                <h3 class="heading-4 services-creative-title">Quality Products</h3>
+                <p class="services-creative-text">We pride ourselves on the quality of our products and aim to provide you with a top-notch home security system.</p>
+              </div>
+            </article>
+            <!-- Services Creative-->
+            <article class="services-creative"><span class="services-creative-icon icomoon icomoon-tools"></span><a class="services-creative-figure" href=""><img src="images/services-7-360x240.jpg" alt="" width="360" height="240"/></a>
+              <div class="services-creative-caption">
+                <h3 class="heading-4 services-creative-title">Installed Your way</h3>
+                <p class="services-creative-text">We always take into account all your wishes and ideas regarding security system in your home and we install them how you want.</p>
+              </div>
+            </article>
+            <!-- Services Creative-->
+            <article class="services-creative"><span class="services-creative-icon icomoon icomoon-house"></span><a class="services-creative-figure" href=""><img src="images/services-20-360x240.jpg" alt="" width="360" height="240"/></a>
+              <div class="services-creative-caption">
+                <h3 class="heading-4 services-creative-title"><a href="">Customer Support</a></h3>
+                <p class="services-creative-text">You can always count on us for friendly, reliable customer support. Our team is available to help you with any issue - big or small!</p>
+              </div>
+            </article>
+            <!-- Services Creative-->
+            
+          </div>
+        </div>
+      </section>
+
+ 
+     
+
+      <!-- Latest projects-->
+      <section class="section section-xxl bg-default text-center">
+        <div class="container">
+          <h2 class="wow fadeInRight">Our Gallery</h2>
+          <p class="sub">Take a look at the showcase of our featured solutions.</p>
+        </div>
+        <div class="container-fluid container-inset-0">
+          <div class="row row-30 row-desktop-8 gutters-8 hoverdir justify-content-center" data-lightgallery="group">
+            <div class="col-sm-6 col-lg-5 col-xl-3">
+              <div class="oh-desktop">
+                <!-- Thumbnail Modern-->
+                <article class="thumbnail thumbnail-modern hoverdir-item wow slideInRight" data-hoverdir-target=".thumbnail-modern-caption"><a class="thumbnail-modern-figure" href="images/grid-gallery-1-1050x700-original.jpg" data-lightgallery="item"><img src="images/grid-gallery-1-474x340.jpg" alt="" width="474" height="340"/></a>
+                  <div class="thumbnail-modern-caption">
+                    <h3 class="heading-4 thumbnail-modern-title"><a href="project-page.html">Fire Alarm</a></h3>
+                    <div class="thumbnail-modern-badge">
+                      <time datetime="2021-08-05">August 05, 2021</time>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 col-xl-3">
+              <div class="oh-desktop">
+                <!-- Thumbnail Modern-->
+                <article class="thumbnail thumbnail-modern hoverdir-item wow slideInUp" data-hoverdir-target=".thumbnail-modern-caption"><a class="thumbnail-modern-figure" href="images/grid-gallery-2-510x700-original.jpg" data-lightgallery="item"><img src="images/grid-gallery-2-474x340.jpg" alt="" width="474" height="340"/></a>
+                  <div class="thumbnail-modern-caption">
+                    <h3 class="heading-4 thumbnail-modern-title"><a href="project-page.html">Access Control</a></h3>
+                    <div class="thumbnail-modern-badge">
+                      <time datetime="2021-08-21">August 21, 2021</time>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 col-xl-3">
+              <div class="oh-desktop">
+                <!-- Thumbnail Modern-->
+                <article class="thumbnail thumbnail-modern hoverdir-item wow slideInDown" data-hoverdir-target=".thumbnail-modern-caption"><a class="thumbnail-modern-figure" href="images/grid-gallery-3-1050x700-original.jpg" data-lightgallery="item"><img src="images/grid-gallery-3-474x340.jpg" alt="" width="474" height="340"/></a>
+                  <div class="thumbnail-modern-caption">
+                    <h3 class="heading-4 thumbnail-modern-title"><a href="project-page.html">Sprinkler</a></h3>
+                    <div class="thumbnail-modern-badge">
+                      <time datetime="2021-09-11">September 11, 2021</time>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 col-xl-3">
+              <div class="oh-desktop">
+                <!-- Thumbnail Modern-->
+                <article class="thumbnail thumbnail-modern hoverdir-item wow slideInLeft" data-hoverdir-target=".thumbnail-modern-caption"><a class="thumbnail-modern-figure" href="images/grid-gallery-4-474x340-original.jpg" data-lightgallery="item"><img src="images/grid-gallery-4-474x340.jpg" alt="" width="474" height="340"/></a>
+                  <div class="thumbnail-modern-caption">
+                    <h3 class="heading-4 thumbnail-modern-title"><a href="">Business Automation</a></h3>
+                    <div class="thumbnail-modern-badge">
+                      <time datetime="2021-10-03">October 03, 2021</time>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 col-xl-3">
+              <div class="oh-desktop">
+                <!-- Thumbnail Modern-->
+                <article class="thumbnail thumbnail-modern hoverdir-item wow slideInRight" data-hoverdir-target=".thumbnail-modern-caption"><a class="thumbnail-modern-figure" href="images/grid-gallery-5-1050x700-original.jpg" data-lightgallery="item"><img src="images/garid-gllery-5-474x340.jpg" alt="" width="474" height="340"/></a>
+                  <div class="thumbnail-modern-caption">
+                    <h3 class="heading-4 thumbnail-modern-title"><a href="">Installation &amp; Maintenance</a></h3>
+                    <div class="thumbnail-modern-badge">
+                      <time datetime="2021-08-05">August 05, 2021</time>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 col-xl-3">
+              <div class="oh-desktop">
+                <!-- Thumbnail Modern-->
+                <article class="thumbnail thumbnail-modern hoverdir-item wow slideInUp" data-hoverdir-target=".thumbnail-modern-caption"><a class="thumbnail-modern-figure" href="images/grid-gallery-6-1050x700-original.jpg" data-lightgallery="item"><img src="images/grid-gallery-6-474x340.jpg" alt="" width="474" height="340"/></a>
+                  <div class="thumbnail-modern-caption">
+                    <h3 class="heading-4 thumbnail-modern-title"><a href="">Remote Control</a></h3>
+                    <div class="thumbnail-modern-badge">
+                      <time datetime="2021-08-21">August 21, 2021</time>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 col-xl-3">
+              <div class="oh-desktop">
+                <!-- Thumbnail Modern-->
+                <article class="thumbnail thumbnail-modern hoverdir-item wow slideInDown" data-hoverdir-target=".thumbnail-modern-caption"><a class="thumbnail-modern-figure" href="images/grid-gallery-7-1240x700-original.jpg" data-lightgallery="item"><img src="images/grid-gallery-7-474x340.jpg" alt="" width="474" height="340"/></a>
+                  <div class="thumbnail-modern-caption">
+                    <h3 class="heading-4 thumbnail-modern-title"><a href="">Networking</a></h3>
+                    <div class="thumbnail-modern-badge">
+                      <time datetime="2021-09-11">September 11, 2021</time>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 col-xl-3">
+              <div class="oh-desktop">
+                <!-- Thumbnail Modern-->
+                <article class="thumbnail thumbnail-modern hoverdir-item wow slideInLeft" data-hoverdir-target=".thumbnail-modern-caption"><a class="thumbnail-modern-figure" href="images/grid-gallery-8-470x700-original.jpg" data-lightgallery="item"><img src="images/grid-gallery-8-474x340.jpg" alt="" width="474" height="340"/></a>
+                  <div class="thumbnail-modern-caption">
+                    <h3 class="heading-4 thumbnail-modern-title"><a href="">Home Automation</a></h3>
+                    <div class="thumbnail-modern-badge">
+                      <time datetime="2021-10-03">October 03, 2021</time>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--customer Review hide
+
+      <section class="section swiper-container swiper-slider swiper-slider-8 swiper-slider-10 bg-gray-3" data-swiper='{"autoplay":false,"simulateTouch":false,"loop":true,"effect":"","pagination":{"el":".swiper-pagination","clickable":true}}'>
+        <div class="swiper-wrapper text-left">
+          <div class="swiper-slide context-dark">
+            <div class="swiper-slide-caption section-xxl">
+              <div class="container">
+                <div class="row justify-content-center justify-content-md-between">
+                  <div class="col-5 d-none d-md-block position-static">
+                    <div class="quote-classic-figure"><img src="images/clients-24-960x680.jpg" alt="" width="960" height="680"/>
+                    </div>
+                  </div>
+                  <div class="col-sm-11 col-md-7 col-xl-6">
+                    <div class="inset-left-xl-95">
+                      <h2>What People Say About Our Services</h2>
+                    -->
+                      <!-- Quote Classic-->
+                      <!--customer Review hide
+                      <article class="quote-classic quote-classic-2 quote-classic-4" data-caption-animate="fadeInLeft" data-caption-delay="0">
+                        <div class="quote-classic-text">
+                          <p class="q">Everyone on the team of Dester is easy to deal with and very responsive. Many years ago, they helped us with our old security system and did their job perfectly.</p>
+                        </div>
+                      -->
+                        <!--if(obj.author)-->
+                        <!--  p.quote-classic-author=obj.author-->
+                        <!--customer Review
+                      </article>
+                      <p class="quote-classic-author" data-caption-animate="fadeInLeft" data-caption-delay="200">— Emily Adams, Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark">
+            <div class="swiper-slide-caption section-lg">
+              <div class="container">
+                <div class="row justify-content-center justify-content-md-between">
+                  <div class="col-5 d-none d-md-block position-static">
+                    <div class="quote-classic-figure"><img src="images/clients-25-960x680.jpg" alt="" width="960" height="680"/>
+                    </div>
+                  </div>
+                  <div class="col-sm-11 col-md-7 col-xl-6">
+                    <div class="inset-left-xl-95">
+                      <h2>What People Say About Our Services</h2>
+                    -->
+                      <!-- Quote Classic-->
+                      <!--customer Review hide
+                      <article class="quote-classic quote-classic-2 quote-classic-4" data-caption-animate="fadeInLeft" data-caption-delay="0">
+                        <div class="quote-classic-text">
+                          <p class="q">My home feels much more secure with alarms installed. Motion detectors are well placed and doors and windows are also secured. They key pad is easy to operate. The system works great!</p>
+                        </div>
+                      -->
+                        <!--if(obj.author)-->
+                        <!--  p.quote-classic-author=obj.author-->
+                        <!--customer Review hide
+                      </article>
+                      <p class="quote-classic-author" data-caption-animate="fadeInLeft" data-caption-delay="200">— Sarah Green, Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark">
+            <div class="swiper-slide-caption section-lg">
+              <div class="container">
+                <div class="row justify-content-center justify-content-md-between">
+                  <div class="col-5 d-none d-md-block position-static">
+                    <div class="quote-classic-figure"><img src="images/clients-26-960x680.jpg" alt="" width="960" height="680"/>
+                    </div>
+                  </div>
+                  <div class="col-sm-11 col-md-7 col-xl-6">
+                    <div class="inset-left-xl-95">
+                      <h2>What People Say About Our Services</h2>
+                    -->
+                      <!-- Quote Classic-->
+                      <!--customer Review hide
+                      <article class="quote-classic quote-classic-2 quote-classic-4" data-caption-animate="fadeInLeft" data-caption-delay="0">
+                        <div class="quote-classic-text">
+                          <p class="q">Everyone on the team of Dester is easy to deal with and very responsive. Very good service.</p>
+                        </div>
+                      -->
+                        <!--if(obj.author)-->
+                        <!--  p.quote-classic-author=obj.author-->
+                        <!--customer Review
+                      </article>
+                      <p class="quote-classic-author" data-caption-animate="fadeInLeft" data-caption-delay="200">— John Nicolson, Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+        <!-- Swiper Pagination-->
+        <div class="swiper-pagination swiper-pagination-vertical" data-bullet-custom="true"></div>
+      </section>
+      -->
+
+      <!-- New Materials-->
+      <!-- Hide Product
+      <section class="section section-xxl bg-default">
+        <div class="container">
+          <h2 class="wow fadeInRight">Our Products</h2>
+          <p class="sub">Take a look at a variety of security products we offer</p>
+          <div class="owl-carousel owl-style-14" data-items="1" data-sm-items="2" data-md-items="3" data-xl-items="4" data-margin="30" data-dots="true">
+          -->
+            <!-- Product-->
+            <!-- Hide Product
+            <article class="product">
+              <div class="product-figure"><img src="images/product-1-260x260.jpg" alt="" width="260" height="260"/>
+              </div>
+              <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
+              </div>
+              <h5 class="product-title">iStep Smart Home Security Wi-Fi Camera</h5>
+              <div class="product-price-wrap">
+                <div class="product-price">$14.00</div>
+              </div>
+              <div class="product-button">
+                <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="cart-page.html">Add to cart</a></div>
+                <div class="button-wrap"><a class="button button-xs button-default button-winona" href="single-product.html">View Product</a></div>
+              </div>
+            </article>-->
+            <!-- Product-->
+            <!-- Hide Product
+            <article class="product">
+              <div class="product-figure"><img src="images/product-2-260x260.jpg" alt="" width="260" height="260"/>
+              </div>
+              <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
+              </div>
+              <h5 class="product-title">EXR Pro Smart Door Lock with Fingerprint &amp; PIN Access</h5>
+              <div class="product-price-wrap">
+                <div class="product-price">$14.00</div>
+              </div>
+              <div class="product-button">
+                <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="cart-page.html">Add to cart</a></div>
+                <div class="button-wrap"><a class="button button-xs button-default button-winona" href="single-product.html">View Product</a></div>
+              </div><span class="product-badge product-badge-new">New</span>
+            </article> -->
+            <!-- Product-->
+            <!-- Hide Product
+            <article class="product">
+              <div class="product-figure"><img src="images/product-3-260x260.jpg" alt="" width="260" height="260"/>
+              </div>
+              <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
+              </div>
+              <h5 class="product-title">GreenSec ABS Electronic Buzzer Alarm</h5>
+              <div class="product-price-wrap">
+                <div class="product-price product-price-sale">$14.00</div>
+                <div class="product-price product-price-old">$21.00</div>
+              </div>
+              <div class="product-button">
+                <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="cart-page.html">Add to cart</a></div>
+                <div class="button-wrap"><a class="button button-xs button-default button-winona" href="single-product.html">View Product</a></div>
+              </div><span class="product-badge product-badge-sale">Sale</span>
+            </article>
+          -->
+            <!-- Product-->
+            <!-- Hide Product
+            <article class="product">
+              <div class="product-figure"><img src="images/product-4-260x260.jpg" alt="" width="260" height="260"/>
+              </div>
+              <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
+              </div>
+              <h5 class="product-title">Dester DS100 Biometric Fingerprint Scanner</h5>
+              <div class="product-price-wrap">
+                <div class="product-price">$14.00</div>
+              </div>
+              <div class="product-button">
+                <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="cart-page.html">Add to cart</a></div>
+                <div class="button-wrap"><a class="button button-xs button-default button-winona" href="single-product.html">View Product</a></div>
+              </div>
+            </article>
+          -->
+            <!-- Product-->
+            <!-- Hide Product
+            <article class="product">
+              <div class="product-figure"><img src="images/product-5-260x260.jpg" alt="" width="260" height="260"/>
+              </div>
+              <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
+              </div>
+              <h5 class="product-title">SecureNS Fingerprint Wireless Scanner</h5>
+              <div class="product-price-wrap">
+                <div class="product-price product-price-sale">$14.00</div>
+                <div class="product-price product-price-old">$21.00</div>
+              </div>
+              <div class="product-button">
+                <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="cart-page.html">Add to cart</a></div>
+                <div class="button-wrap"><a class="button button-xs button-default button-winona" href="single-product.html">View Product</a></div>
+              </div><span class="product-badge product-badge-sale">Sale</span>
+            </article>
+          -->
+            <!-- Product-->
+            <!-- Hide Product
+            <article class="product">
+              <div class="product-figure"><img src="images/product-6-260x260.jpg" alt="" width="260" height="260"/>
+              </div>
+              <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
+              </div>
+              <h5 class="product-title">SmartAge 2-Pack Fire Alarms Smoke Detector</h5>
+              <div class="product-price-wrap">
+                <div class="product-price">$14.00</div>
+              </div>
+              <div class="product-button">
+                <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="cart-page.html">Add to cart</a></div>
+                <div class="button-wrap"><a class="button button-xs button-default button-winona" href="single-product.html">View Product</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    -->
+
+      <section class="section section-first bg-default">
+        <div class="container"></div>
+        <div class="parallax-container" data-parallax-img="images/bg-counter-1.jpg">
+          <div class="parallax-content section-xxl">
+            <div class="container">
+              <div class="row row-30 justify-content-center justify-content-xl-between align-items-lg-end">
+                <div class="col-6 col-sm-3">
+                  <div class="counter-modern">
+                    <h1 class="counter-modern-number"><span class="counter">100</span>
+                    </h1>
+                    <div class="counter-modern-decor"></div>
+                    <p class="counter-modern-title">Employees</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="counter-modern">
+                    <h1 class="counter-modern-number"><span class="counter">500</span><span class="symbol"></span>
+                    </h1>
+                    <div class="counter-modern-decor"></div>
+                    <p class="counter-modern-title">Clients</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="counter-modern">
+                    <h1 class="counter-modern-number"><span class="counter">65</span>
+                    </h1>
+                    <div class="counter-modern-decor"></div>
+                    <p class="counter-modern-title">Partners</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="counter-modern">
+                    <h1 class="counter-modern-number"><span class="counter">10000</span><span class="symbol">+</span>
+                    </h1>
+                    <div class="counter-modern-decor"></div>
+                    <p class="counter-modern-title">Positive Reviews</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Our Partners-->
+      <section class="section section-xxl bg-default text-center">
+        <div class="container">
+          <h2 class="wow fadeInRight">Our Partners</h2>
+          <div class="owl-carousel" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-margin="30" data-autoplay="true" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut"><a class="clients-creative" href="#"><img src="images/clients-23-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-12-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-13-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-14-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-15-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-17-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-18-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-19-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-20-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-22-260x160.jpg" alt="" width="260" height="160"/></a></div>
+        </div>
+      </section>
+      <!-- Our Clients-->
+      <section class="section section-xxl bg-default text-center">
+        <div class="container">
+          <h2 class="wow fadeInRight">Our Major Clients</h2>
+          <div class="owl-carousel" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-margin="30" data-autoplay="true" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut"><a class="clients-creative" href="#"><img src="images/clients-31-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-32-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-33-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-34-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-35-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-36-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-37-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-38-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-39-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-40-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-41-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-42-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-43-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-44-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-45-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-46-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-47-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-48-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-49-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-50-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-51-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-52-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-53-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-54-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-55-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-56-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-57-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-58-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-59-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-60-260x160.png" alt="" width="260" height="160"/></a><a class="clients-creative" href="#"><img src="images/clients-61-260x160.png" alt="" width="260" height="160"/></a></div>
+        </div>
+      </section>
+
+
+            <section class="section section-wrap section-wrap-equal bg-sky-blue">
+        <div class="container">
+          <div class="row row-ten justify-content-md-center justify-content-lg-start">
+            <div class="col-md-8 col-lg-5">
+              <div class="section-xxl section-left-align">
+                <h2 class="oh-desktop"><span class="d-inline-block wow slideInLeft">Trust SimpliSafe with all Your Security Solutions</span></h2>
+                <p class="sub wow fadeInRight">With over 20 years of experience in security, we know how to protect you and your home.</p>
+                <div class="button-wrap oh-desktop"><a class="button button-primary wow slideInUp" href="contacts.html">Get a Quote<span class="icon mdi mdi-chevron-right"></span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-wrap-aside section-wrap-image"><img src="images/security-24-940x610.jpg" alt="" width="940" height="610"/>
+        </div>
+      </section>
+     
+
+      <!-- Page Footer-->
+      <footer class="section section-md footer-creative footer-creative-2 context-dark">
+        <div class="container">
+          <div class="row row-60 justify-content-center justify-content-md-between">
+            <div class="col-sm-8 col-md-5 col-lg-3">
+              <h3 class="heading-4 footer-creative-title oh-desktop"><span class="d-inline-block wow slideInDown">Get In Touch</span></h3>
+              <ul class="footer-creative-contacts d-inline-block d-md-block">
+                <li class="wow fadeInRight">
+                  <p class="footer-creative-contacts-title">Free consultation:</p><a class="phone" href="tel:#">+91 9108010829</a>
+                </li>
+                <li class="wow fadeInRight" data-wow-delay=".05s">
+                  <p class="footer-creative-contacts-title">Address:</p><a class="address" href="#">138 4th AC Cross, East of NGEF Layout, Kasturi Nagar, Bangalore - 560043</a>
+                </li>
+               <li class="wow fadeInRight" data-wow-delay=".1s">
+                  <p class="footer-creative-contacts-title">E-mail</p><a class="mail" href="mailto:#">info@simplisafeindia.com</a>
+                </li>
+                <li class="wow fadeInRight" data-wow-delay=".1s">
+                  <p class="footer-creative-contacts-title">Website</p><a class="mail" href="mailto:#">www.simplisafeindia.com</a>
+                </li> 
+              </ul>
+              <hr/>
+              <ul class="list-inline footer-social-list footer-social-list-2">
+                <li><a class="icon icomoon icon-facebook" href="#"></a></li>
+                <li><a class="icon icomoon icon-instagram" href="#"></a></li>
+                <li><a class="icon icomoon icon-youtube" href="#"></a></li>
+                <li><a class="icon icomoon icon-twitter" href="#"></a></li>
+              </ul>
+            </div>
+            <!--test footer-->
+            <div class="col-sm-9 col-md-6 col-lg-5 col-xl-5">
+              
+              <div class="news-inside">
+                
+                <div class="list-popular-post">
+                  <div class="list-popular-post-item wow fadeInRight">
+                    <!-- Post Minimal-->
+                    
+                    
+                  </div>
+                  <div class="list-popular-post-item wow fadeInRight">
+                    <!-- Post Minimal-->
+                    
+                  </div>
+                </div>
+                <p class="sign-up-label wow fadeInRight">Sign up today for tips and latest news:</p>
+                <!-- RD Mailform-->
+                <form class="rd-form rd-mailform rd-form-inline rd-form-inline-sm wow fadeInUp" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                  <div class="form-wrap">
+                    <input class="form-input" id="subscribe-form-2-email" type="email" name="email" data-constraints="@Email @Required"/>
+                    <label class="form-label" for="subscribe-form-2-email">Enter your email</label>
+                  </div>
+                  <div class="form-button">
+                    <button class="button footer-custom-btn button-sm button-icon-2 button-primary button-winona" type="submit"><span class="icon icomoon icomoon-telegram"></span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-12 col-lg-3 col-xl-4">
+              <div class="oh-desktop">
+                <div class="wow slideInLeft"><a class="brand" href="index.html"><img src="images/logo-inverse-153x44.png" alt="" width="153" height="44"/></a>
+                  <p class="footer-label-desc">Providing the top-notch security systems across India since 2008.</p>
+                  <ul class="footer-creative-list d-inline-block d-sm-block">
+                    <li><a href="about-us.html">About us</a></li>
+                    
+                    <li><a href="contacts.html">Contacts</a></li>
+                
+                  </ul>
+                  <!-- Rights-->
+                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>SimpliSafe</span><span>.&nbsp;All Rights Reserved.&nbsp;</span><a href="privacy-policy.html">Privacy policy</a></p>
+                </div>
+              </div>
+              <div class="bg-footer-creative"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
